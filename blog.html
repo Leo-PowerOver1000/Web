@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="social-media-links">
+                <a href="https://m.facebook.com/leo.bernadas.718/?comment_id=Y29tbWVudDozNTY0NDQ5ODUwMjc1OTg5XzM1NjQ0ODQ3MjY5MzkxNjg%3D"><img src="images.png" alt="Facebook"></a>
+                <a href="https://twitter.com/leofilmofficial?lang=en"><img src="twit.png" alt="Twitter"></a>
+                <a href="https://ph.linkedin.com/company/leo-burnett"><img src="link.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <nav id="main-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="Pfp.jpg" alt="Profile Picture" class="profile-picture">
+    <section>
+        <div class="cat-image">
+            <h2>BLOG</h2>
+            <p class="web-description">
+              Welcome to my blog! Here, I share my thoughts, insights, and experiences on various topics. Feel free to explore the posts below.
+            </p>
+        </div>
+    </section>
+    
+        <div class="container">
+    <div class="box">
+        <p>Title: "Embracing Change: Navigating Life's Shifts"In a world of constant flux, embracing change is essential. Rather than resisting, view it as an opportunity for growth. Stay flexible, adapt, and maintain a positive mindset. Practice self-care and seek support when needed. Change is inevitable, but by embracing it with courage and resilience, we can navigate life's transitions with ease.</p>
+    </div>
+    <section class="blog-posts">
+        <article>
+            <img src="flower.jpg" alt="Post 1 Image">
+        </article>
+      
+        <article>
+            <img src="hello.jpg" alt="Post 2 Image">
+            <p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script>
+    
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

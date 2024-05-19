@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="social-media-links">
+                <a href="https://m.facebook.com/leo.bernadas.718/?comment_id=Y29tbWVudDozNTY0NDQ5ODUwMjc1OTg5XzM1NjQ0ODQ3MjY5MzkxNjg%3D"><img src="images.png" alt="Facebook"></a>
+                <a href="https://twitter.com/leofilmofficial?lang=en"><img src="twit.png" alt="Twitter"></a>
+                <a href="https://ph.linkedin.com/company/leo-burnett"><img src="link.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <nav id="main-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="Pfp.jpg" alt="Profile Picture" class="profile-picture">
+    <section>
+        <div class="cat-image">
+            <h2>PORTFOLIO</h2>
+<div class="project">
+    <img src="Git1.jpg" alt="Project 1" class="project-image">
+    <div class="project-details">
+        <h3>Project 1</h3>
+        <p>Description of the project: sir jerwin tell us to make a basic html website for our midterm project.</p>
+        Technologies used: HTML, CSS.
+        <a href="https://leo-powerover1000.github.io/HTML_IV_TEST/">View Demo</a>
+        <a href="https://github.com/Leo-PowerOver1000/HTML_IV_TEST.git">GitHub Repository</a>
+    </div>
+</div>
+                </div>
+            </div>
+<div class="project project-bottom">
+    <img src="Git2.jpg" alt="Project 2">
+    <div class="project-details">
+        <h3>Project 2</h3>
+        <p>Description of Project 2: This project made for my midterm activity Technologies used: HTML, CSS.</p>
+        <a href="https://leo-powerover1000.github.io/MIDTERM_ACTIVITY_PICTURE/">View Demo</a>
+        <a href="https://github.com/Leo-PowerOver1000/MIDTERM_ACTIVITY_PICTURE">GitHub Repository</a>
+    </div>
+</div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <div class="scroll-image"></div>
+    <div class="cover-image"></div>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script>
+        // Function to toggle the visibility of the main menu
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

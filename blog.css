@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.nav-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    color: #333333;
+    font-size: 24px;
+    display: block;
+    margin-right: 20px; /* Add margin to separate from social links */
+}
+
+#main-menu {
+    display: none;
+    position: absolute; /* Change to absolute positioning */
+    top: 60px; /* Position below the nav-container */
+    left: 20px; /* Align with the nav-container */
+    background-color: #ffffff; /* Background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-menu.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555555;
+}
+
+section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+section h2 {
+    color: white;
+    font-size: 48px; /* Increase the font size */
+    position: absolute; /* Use absolute positioning */
+    top: 0px; /* Position it 20px from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the element */
+}
+
+section p {
+    position: absolute;
+    bottom: 20px;
+    right: 0; 
+    width: 100%;
+    text-align: end;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 769px) {
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #main-menu {
+        position: relative; /* Change to relative positioning */
+        top: 0; /* Reset top position */
+        left: 0; /* Reset left position */
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    position: fixed; /* Fix it to the upper right corner */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it is on top */
+}
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-links a {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.social-media-links a img {
+    width: 30px; 
+    height: 30px; 
+}
+article img {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it circular */
+}
+
+/* Positioning the images */
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-posts article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Adjust spacing between posts */
+}
+
+.blog-posts article img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+/* Positioning the images */
+.blog-posts article:nth-child(odd) img {
+  order: 2; /* Place odd-numbered posts' images second */
+}
+
+.blog-posts article:nth-child(even) img {
+  order: 1; /* Place even-numbered posts' images first */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.box {
+  background-color: #E6E6FA;
+  border: 1px solid #000000;
+  padding: 20px;
+  width: 40%; /* Set the box width to 100% */
+  margin-top: 100px;
+  margin-bottom: 700px; /* Add margin bottom */
+}

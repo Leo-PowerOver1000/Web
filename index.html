@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="social-media-links">
+                <a href="https://m.facebook.com/leo.bernadas.718/?comment_id=Y29tbWVudDozNTY0NDQ5ODUwMjc1OTg5XzM1NjQ0ODQ3MjY5MzkxNjg%3D"><img src="images.png" alt="Facebook"></a>
+                <a href="https://twitter.com/leofilmofficial?lang=en"><img src="twit.png" alt="Twitter"></a>
+                <a href="https://ph.linkedin.com/company/leo-burnett"><img src="link.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <nav id="main-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="Pfp.jpg" alt="Profile Picture" class="profile-picture">
+    <section>
+        <div class="cat-image">
+            <h2>HOMEPAGE</h2>
+            <p class="web-description">
+              HELLO! my name is Leo Vincent Bernadas and this is the website I made <br>
+              <br>
+              This is where you can find information about my profile, projects, and services. <br>
+            <br>
+            Explore the links above to navigate through different sections of the website.</p>
+        </div>
+    </section>
+    <div class="scroll-image"></div>
+    <div class="cover-image"></div>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script>
+        // Function to toggle the visibility of the main menu
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
